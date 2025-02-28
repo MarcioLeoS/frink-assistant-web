@@ -156,3 +156,51 @@
         @apply bg-background text-foreground;
     }
 }
+
+
+.btn,
+.btn-lg,
+.btn-sm,
+.btn-xs {
+    @apply font-medium text-sm inline-flex items-center justify-center border border-transparent rounded-lg leading-5 shadow-sm transition;
+}
+
+.btn {
+    @apply px-3 py-2;
+}
+
+.btn-lg {
+    @apply px-4 py-3;
+}
+
+.btn-sm {
+    @apply px-2 py-1;
+}
+
+.btn-xs {
+    @apply px-2 py-0.5;
+}
+
+
+/* Scroll bar */
+
+.container-y::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+  }
+  
+  .container-y::-webkit-scrollbar-track {
+    background: #1a1a1a; /* Color de fondo del track */
+  }
+  
+  .container-x::-webkit-scrollbar {
+    height: 8px; /* Ancho del scrollbar */
+  }
+  
+  .container-y::-webkit-scrollbar-thumb, .container-x::-webkit-scrollbar-thumb {
+    background: #333; /* Color del scrollbar */
+    border-radius: 4px;
+  }
+  
+  .container-y::-webkit-scrollbar-thumb:hover, .container-x::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color cuando se pasa el mouse */
+  }
